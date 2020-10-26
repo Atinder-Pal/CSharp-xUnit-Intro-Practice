@@ -83,5 +83,16 @@ namespace XUnitIntroPractice_Tests
                 Program.ThrowsFormatException();
             });
         }
+
+
+        [Fact]
+        public void IndexOutOfRangeException_Test()
+        {
+            // Assert
+            Assert.Throws<IndexOutOfRangeException>(() => {
+                // This code block should throw an Exception of the type in the angle brackets.
+                Program.ThrowsIndexOutOfRangeException();
+            });
+        }
     }
 }

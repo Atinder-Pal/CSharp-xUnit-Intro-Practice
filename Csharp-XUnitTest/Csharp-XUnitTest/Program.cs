@@ -22,5 +22,13 @@ namespace XUnitIntroPractice
         {
             float.Parse("Hello");
         }
+
+        public static void ThrowsIndexOutOfRangeException()
+        {
+            int[] StudentIds = new int[]{ 1,2,3,4,5};
+            //Get StudentID at tenth index in array
+            int output = StudentIds[10];
+        }
+
     }
 }
