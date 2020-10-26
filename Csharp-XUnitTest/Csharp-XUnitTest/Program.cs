@@ -30,5 +30,10 @@ namespace XUnitIntroPractice
             int output = StudentIds[10];
         }
 
+        public static void ThrowsNullReferenceException()
+        {
+            string foo = null;
+            foo.ToUpper();
+        }
     }
 }

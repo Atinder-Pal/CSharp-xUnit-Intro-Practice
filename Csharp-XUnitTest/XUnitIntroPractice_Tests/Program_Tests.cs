@@ -94,5 +94,15 @@ namespace XUnitIntroPractice_Tests
                 Program.ThrowsIndexOutOfRangeException();
             });
         }
+
+        [Fact]
+        public void NullReferenceException_Test()
+        {
+            // Assert
+            Assert.Throws<NullReferenceException>(() => {
+                // This code block should throw an Exception of the type in the angle brackets.
+                Program.ThrowsNullReferenceException();
+            });
+        }
     }
 }
