@@ -35,5 +35,23 @@ namespace XUnitIntroPractice
             string foo = null;
             foo.ToUpper();
         }
+
+        public static void ThrowsDivideByZeroException()
+        {
+            int foo = 19;
+            int bar = foo/0;
+        }
+
+       
+        public static void ThrowsStackOverflowException()
+        {
+            /* The following code should work but the test took a lot of time, so manually throwing exception*/
+            //int i = 0;
+            //while(true)
+            //{
+            //    i++;
+            //}
+            throw new StackOverflowException("Manually thrown Stack Overflow Exception");
+        }
     }
 }

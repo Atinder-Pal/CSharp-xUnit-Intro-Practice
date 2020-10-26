@@ -104,5 +104,25 @@ namespace XUnitIntroPractice_Tests
                 Program.ThrowsNullReferenceException();
             });
         }
+
+        [Fact]
+        public void DivideByZeroException_Test()
+        {
+            // Assert
+            Assert.Throws<DivideByZeroException>(() => {
+                // This code block should throw an Exception of the type in the angle brackets.
+                Program.ThrowsDivideByZeroException();
+            });
+        }
+
+        [Fact]
+        public void StackOverflowException_Test()
+        {
+            // Assert
+            Assert.Throws<StackOverflowException>(() => {
+                // This code block should throw an Exception of the type in the angle brackets.
+                Program.ThrowsStackOverflowException();
+            });
+        }
     }
 }
