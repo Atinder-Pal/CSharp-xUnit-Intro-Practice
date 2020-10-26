@@ -13,10 +13,14 @@ namespace XUnitIntroPractice
         }
 
         public static bool IsYesOrNo(string inputString)
-        {
-            
+        {            
             bool result = validStrings.Contains(inputString.Trim().ToUpper());
             return result;
+        }
+
+        public static void ThrowsFormatException()
+        {
+            float.Parse("Hello");
         }
     }
 }
